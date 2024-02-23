@@ -9,8 +9,7 @@ class EditNoteView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final NoteModel noteModel =
-        ModalRoute.of(context)!.settings.arguments as NoteModel;
+    final noteModel = ModalRoute.of(context)!.settings.arguments as NoteModel;
     return Scaffold(
       body: EditNoteViewBody(
         noteModel: noteModel,
